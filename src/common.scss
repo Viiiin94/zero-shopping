@@ -1,0 +1,21 @@
+@mixin container {
+  width: 100vw;
+  height: 100%;
+
+  padding: 4.5rem 0 0 0;
+}
+
+@mixin list {
+  width: 20rem;
+  height: 27rem;
+  margin: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+  border: 1px solid gray;
+  border-radius: 5%;
+
+  padding-top: 1rem;
+}

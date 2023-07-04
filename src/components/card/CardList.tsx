@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Suspense } from "react";
 
 import Card from "./Card";
 
-import { Product } from "../types";
+import { Product } from "../../types";
 
 import styles from "./CardList.module.scss";
 

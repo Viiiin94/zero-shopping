@@ -1,5 +1,5 @@
 import { useAppSelector } from "../../hooks/useRedux";
-import CardList from "../../components/CardList";
+import CardList from "../../components/card/CardList";
 
 import styles from "./Main.module.scss";
 

@@ -1,0 +1,42 @@
+@import "../../common.scss";
+
+.list {
+  @include list;
+}
+
+.image_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 500px;
+
+  padding: 5rem 0;
+
+  background-color: white;
+
+  .image {
+    max-width: 15rem;
+    height: 10rem;
+
+    cursor: pointer;
+  }
+
+  .image:hover {
+    transform: scale(1.1, 1.1);
+    transition: 0.5s;
+  }
+}
+
+.text_area {
+  width: auto;
+  height: 100%;
+
+  background-color: gray;
+  opacity: 0.8;
+
+  border-top: 1px solid black;
+
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
