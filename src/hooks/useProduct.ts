@@ -1,5 +1,4 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { useMemo } from "react";
 import axios from "axios";
 
 import { Product } from "../types/index";

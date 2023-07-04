@@ -1,17 +1,16 @@
-import { useAppDispatch, useAppSelector } from "./hooks/useRedux";
+import { useAppDispatch } from "./hooks/useRedux";
 import { fetchProduct } from "./hooks/useProduct";
 import { useEffect } from "react";
+import Router from "../src/router/Router";
 
 function App() {
-  const product = useAppSelector((state) => state.product.products);
   const dispatch = useAppDispatch();
 
   useEffect(() => {
     dispatch(fetchProduct());
-  });
+  }, [dispatch]);
 
-  console.log(product);
-  return <div>1</div>;
+  return <Router />;
 }
 
 export default App;

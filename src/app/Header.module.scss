@@ -1,0 +1,48 @@
+.header {
+  width: 100%;
+  height: 3.5rem;
+  position: fixed;
+  top: 0;
+
+  padding: 0.5rem 0.5rem;
+
+  border-bottom: 1px solid opacity($color: #1f1f1f);
+  box-shadow: 0 0 10px 0 gray;
+
+  .nav {
+    width: 98vw;
+    height: 3rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.left_side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .hamburger {
+    visibility: hidden;
+  }
+
+  .home_button {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+  }
+
+  .link {
+    a {
+      font-size: 1rem;
+      padding: 0 1rem;
+    }
+  }
+}
+
+.right_side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
