@@ -1,6 +1,7 @@
 .header {
   width: 100%;
   height: 3.5rem;
+  background-color: #fff;
   position: fixed;
   top: 0;
 
@@ -9,9 +10,11 @@
   border-bottom: 1px solid opacity($color: #1f1f1f);
   box-shadow: 0 0 10px 0 gray;
 
+  z-index: 9999;
+
   .nav {
     width: 98vw;
-    height: 3rem;
+    height: 3.5rem;
 
     display: flex;
     justify-content: space-between;

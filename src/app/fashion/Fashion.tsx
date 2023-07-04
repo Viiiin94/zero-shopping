@@ -1,7 +1,9 @@
 import React from "react";
 
+import styles from "./Fashion.module.scss";
+
 const Fashion = () => {
-  return <div>Fashion</div>;
+  return <div className={styles.container}>Fashion</div>;
 };
 
 export default Fashion;

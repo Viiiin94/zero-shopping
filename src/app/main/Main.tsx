@@ -1,19 +1,27 @@
 import { useAppSelector } from "../../hooks/useRedux";
+import CardList from "../../components/CardList";
+
+import styles from "./Main.module.scss";
 
 const Main = () => {
   const product = useAppSelector((state) => state.product.products);
 
-  const clo = product.filter(
+  const fashion = product.filter(
     (item) =>
       item.category === "men's clothing" || item.category === "women's clothing"
   );
 
-  const jew = product.filter((item) => item.category === "jewelery");
-  const ele = product.filter((item) => item.category === "electronics");
+  const accessory = product.filter((item) => item.category === "jewelery");
 
-  console.log(jew);
+  const digital = product.filter((item) => item.category === "electronics");
 
-  return <div>Main</div>;
+  return (
+    <div className={styles.container}>
+      <CardList props={fashion} title="패션" />
+      <CardList props={accessory} title="액세서리" />
+      <CardList props={digital} title="디지털" />
+    </div>
+  );
 };
 
 export default Main;
