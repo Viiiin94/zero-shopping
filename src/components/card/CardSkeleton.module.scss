@@ -4,7 +4,7 @@
   @include list;
 }
 
-.image_container {
+.spinner_container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,26 +14,11 @@
   padding: 5rem 0;
 
   background-color: white;
-
-  .image {
-    max-width: 15rem;
-    height: 10rem;
-
-    cursor: pointer;
-  }
-
-  .image:hover {
-    transform: scale(1.1, 1.1);
-    transition: 0.5s;
-  }
 }
 
 .text_area {
   width: auto;
   height: 100%;
-
-  background-color: #cbced5;
-  opacity: 0.8;
 
   border-top: 1px solid black;
 

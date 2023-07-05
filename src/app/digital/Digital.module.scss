@@ -3,3 +3,16 @@
 .container {
   @include container;
 }
+
+.title {
+  @include title_size;
+  margin-top: 4rem;
+}
+
+.section {
+  @include common_section;
+}
+
+.list_container {
+  @include list_container;
+}

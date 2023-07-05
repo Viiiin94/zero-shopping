@@ -1,3 +1,4 @@
+import Card from "../../components/card/Card";
 import { useAppSelector } from "../../hooks/useRedux";
 
 import styles from "./Accessory.module.scss";
@@ -7,7 +8,23 @@ const Accessory = () => {
 
   const accessory = product.filter((item) => item.category === "jewelery");
 
-  return <div className={styles.container}>Accessory</div>;
+  return (
+    <div className={styles.container}>
+      <h1 className={styles.title}>디지털</h1>
+      <div className={styles.section}>
+        <ul className={styles.list_container}>
+          {accessory.map((item) => (
+            <Card
+              image={item.image}
+              title={item.title}
+              price={item.price}
+              key={item.id}
+            />
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
 };
 
 export default Accessory;
