@@ -12,9 +12,7 @@ const Header = () => {
     <header className={styles.header}>
       <nav className={styles.nav}>
         <div className={styles.left_side}>
-          <div className={styles.hamburger}>
-            <Modal />
-          </div>
+          <div className={styles.hamburger}>{/* <Modal /> */}</div>
           <div className={styles.home_button}>
             <Link to="/">My Shop</Link>
           </div>

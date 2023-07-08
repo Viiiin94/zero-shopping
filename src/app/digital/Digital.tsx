@@ -13,12 +13,13 @@ const Digital = () => {
       <h1 className={styles.title}>디지털</h1>
       <div className={styles.section}>
         <ul className={styles.list_container}>
-          {digital.map((item) => (
+          {digital.map((product) => (
             <Card
-              image={item.image}
-              title={item.title}
-              price={item.price}
-              key={item.id}
+              image={product.image}
+              title={product.title}
+              price={product.price}
+              product={product}
+              key={product.id}
             />
           ))}
         </ul>

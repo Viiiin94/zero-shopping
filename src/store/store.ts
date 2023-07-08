@@ -1,12 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { productReducer } from "../hooks/useProduct";
-import { modalReducer } from "../hooks/useModal";
 import { darkModeReducer } from "../hooks/useDarkMode";
 
 export const store = configureStore({
   reducer: {
     product: productReducer,
-    modal: modalReducer,
     darkmode: darkModeReducer,
   },
 });

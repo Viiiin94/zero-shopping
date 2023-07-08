@@ -1,5 +1,3 @@
-// darkModeSlice.ts
-
 import { createSlice } from "@reduxjs/toolkit";
 
 interface DarkModeState {

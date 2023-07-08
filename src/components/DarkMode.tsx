@@ -1,4 +1,9 @@
-import React from "react";
+import { useAppDispatch, useAppSelector } from "../hooks/useRedux";
+import {
+  enableDarkMode,
+  disableDarkMode,
+  toggleDarkMode,
+} from "../hooks/useDarkMode";
 
 const DarkMode = () => {
   return <div>DarkMode</div>;

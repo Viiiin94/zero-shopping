@@ -17,9 +17,9 @@ const Main = () => {
 
   return (
     <div className={styles.container}>
-      <CardList props={fashion} title="패션" />
-      <CardList props={accessory} title="액세서리" />
-      <CardList props={digital} title="디지털" />
+      <CardList products={fashion} title="패션" />
+      <CardList products={accessory} title="액세서리" />
+      <CardList products={digital} title="디지털" />
     </div>
   );
 };

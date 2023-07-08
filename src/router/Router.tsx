@@ -6,6 +6,7 @@ import Main from "../app/main/Main";
 import Digital from "../app/digital/Digital";
 import Accessory from "../app/accessory/Accessory";
 import Fashion from "../app/fashion/Fashion";
+import Product from "../app/product/Product";
 
 const Router = () => {
   return (
@@ -16,6 +17,7 @@ const Router = () => {
           <Route path="/fashion" element={<Fashion />} />
           <Route path="/accessory" element={<Accessory />} />
           <Route path="/digital" element={<Digital />} />
+          <Route path="/products/:product" element={<Product />} />
         </Route>
       </Routes>
     </BrowserRouter>

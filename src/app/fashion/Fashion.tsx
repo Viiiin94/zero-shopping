@@ -16,12 +16,13 @@ const Fashion = () => {
       <h1 className={styles.title}>패션</h1>
       <div className={styles.section}>
         <ul className={styles.list_container}>
-          {fashion.map((item) => (
+          {fashion.map((product) => (
             <Card
-              image={item.image}
-              title={item.title}
-              price={item.price}
-              key={item.id}
+              image={product.image}
+              title={product.title}
+              price={product.price}
+              product={product}
+              key={product.id}
             />
           ))}
         </ul>

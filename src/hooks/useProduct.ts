@@ -1,14 +1,14 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import axios from "axios";
 
-import { Product } from "../types/index";
+import { Products } from "../types/index";
 
 const create = axios.create();
 const API_URL = "https://fakestoreapi.com/products" as string;
 
 export const fetchProductAPI = async () => {
   const BASE_URL = API_URL;
-  const { data } = await create.get<Product>(BASE_URL);
+  const { data } = await create.get<Products>(BASE_URL);
   return data;
 };
 
@@ -18,7 +18,7 @@ export const fetchProduct = createAsyncThunk("product", async () => {
 });
 
 interface ProductState {
-  products: Product;
+  products: Products;
 }
 
 const initialState = {
@@ -32,7 +32,7 @@ export const productSlice = createSlice({
   extraReducers: (builder) => {
     builder.addCase(
       fetchProduct.fulfilled,
-      (state, action: PayloadAction<Product>) => {
+      (state, action: PayloadAction<Products>) => {
         state.products = [...action.payload];
       }
     );

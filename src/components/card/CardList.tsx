@@ -2,28 +2,29 @@ import React from "react";
 
 import Card from "./Card";
 
-import { Product } from "../../types";
+import { Products } from "../../types";
 
 import styles from "./CardList.module.scss";
 
 interface CardListProps {
-  props: Product;
+  products: Products;
   title: string;
 }
 
-const CardList: React.FC<CardListProps> = ({ props, title }) => {
+const CardList: React.FC<CardListProps> = ({ products, title }) => {
   return (
     <section className={styles.section}>
       <div>
         <h1 className={styles.title}>{title}</h1>
         <ul className={styles.list_container}>
-          {props
-            .map((item) => (
+          {products
+            .map((product) => (
               <Card
-                image={item.image}
-                title={item.title}
-                price={item.price}
-                key={item.id}
+                image={product.image}
+                title={product.title}
+                price={product.price}
+                product={product}
+                key={product.id}
               />
             ))
             .slice(0, 4)}
