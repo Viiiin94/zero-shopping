@@ -1,9 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { Product } from "../../types/index.ts";
 
 import styles from "./Card.module.scss";
-import { Link } from "react-router-dom";
 
 interface CardProps {
   title: string;

@@ -3,3 +3,37 @@
 .container {
   @include container;
 }
+
+.section {
+  @include common_section;
+}
+
+.card {
+  width: 50rem;
+  height: 30rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border: 1px soild black;
+
+  .description {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  .rate_wrap {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  .img {
+    width: 10rem;
+    height: auto;
+  }
+}
