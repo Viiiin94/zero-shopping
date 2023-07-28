@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
 
-import styles from "./Product.module.scss";
 import Star from "./Star";
+import styles from "./Product.module.scss";
 
 interface ProductsType {
   id: number;
@@ -28,15 +28,15 @@ const Product = () => {
           <h1>
             {id}. {title}
           </h1>
-          <div className={styles.description}>
+          <div className={styles.wrapper}>
             <img className={styles.img} src={image} alt="이미지" />
-            <div>
-              <div>{category}</div>
-              <div>{description}</div>
-              <div>$ {price}</div>
+            <div className={styles.description_wrapper}>
+              <div className={styles.category}>{category}</div>
+              <div className={styles.description}>{description}</div>
+              <div className={styles.price}>$ {price}</div>
               <div className={styles.rate_wrap}>
-                {rating.count} {rating.rate}
                 <Star rate={rating.rate} />
+                {rating.count}명 / {rating.rate}점
               </div>
             </div>
           </div>

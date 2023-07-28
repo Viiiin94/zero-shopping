@@ -1,10 +1,14 @@
 .star_wrap {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: auto;
+
+  margin: 0 1rem;
+
+  line-height: 100;
 }
 
 .star_icon {
-  display: inline-flex;
-  margin-right: 5px;
+  display: flex;
+  margin: 0 2px;
 }

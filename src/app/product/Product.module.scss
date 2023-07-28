@@ -16,24 +16,46 @@
   flex-direction: column;
   justify-content: center;
 
-  border: 1px soild black;
-
-  .description {
+  .wrapper {
     width: 100%;
 
     display: flex;
     flex-direction: row;
   }
 
-  .rate_wrap {
-    width: 100%;
-
-    display: flex;
-    flex-direction: row;
+  .description_wrapper {
+    margin: 0 1rem;
+    line-height: 110%;
   }
 
   .img {
     width: 10rem;
     height: auto;
+    padding: 15px;
+  }
+
+  .category {
+    padding: 1rem 0;
+    border-bottom: 1px solid black;
+
+    font-size: 2rem;
+  }
+
+  .description {
+    padding: 1rem 0;
+  }
+
+  .price {
+    display: flex;
+    justify-content: right;
+    margin: 3px 0;
+  }
+
+  .rate_wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding: 5px 0;
   }
 }

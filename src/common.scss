@@ -34,10 +34,13 @@
 }
 
 @mixin list_container {
+  width: 100%;
+  height: auto;
+
   display: flex;
-  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 0 2.5rem;
 }
 
 @mixin title_size {
