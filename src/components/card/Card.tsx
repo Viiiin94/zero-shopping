@@ -25,7 +25,7 @@ const Card: React.FC<CardProps> = ({ title, image, price, product }) => {
 
       <div className={styles.text_area}>
         <p>{title}</p>
-        <p>$ {price}</p>
+        <p className={styles.price}>$ {price}</p>
       </div>
     </li>
   );

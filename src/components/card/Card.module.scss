@@ -40,3 +40,8 @@
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
+
+.price {
+  margin-top: 5px;
+  @include number_font;
+}
