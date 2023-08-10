@@ -1,8 +1,29 @@
-.modal_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  inset: 0;
-  z-index: 10;
+.container {
+  .wrapper {
+    width: 250px;
+    height: 100%;
+
+    background-color: #f1f1f1;
+
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+  }
+
+  .close {
+    display: flex;
+    justify-content: right;
+
+    margin: 1rem;
+  }
+
+  .link {
+    margin: 1rem;
+
+    display: flex;
+    flex-direction: column;
+
+    font-size: x-large;
+    font-weight: 400;
+  }
 }

@@ -6,7 +6,11 @@
   -moz-appearance: none;
   appearance: none;
 
+  font-size: x-large;
+
   cursor: pointer;
 
   margin: auto 10px;
+
+  transition: 1s;
 }

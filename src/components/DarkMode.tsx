@@ -21,7 +21,7 @@ const DarkMode = () => {
       className={styles.button}
       onClick={() => setIsDarkmode(!isDarkmode)}
     >
-      {isDarkmode ? "light" : "dark"}
+      {isDarkmode ? "💡" : "🌕"}
     </button>
   );
 };
