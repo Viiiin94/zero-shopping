@@ -1,4 +1,7 @@
-import { useState, useEffect } from "react";
+// DarkMode.js
+
+import React, { useState, useEffect } from "react";
+import { CiDark, CiLight } from "react-icons/ci";
 
 import styles from "./DarkMode.module.scss";
 
@@ -13,15 +16,19 @@ const DarkMode = () => {
   useEffect(() => {
     localStorage.setItem("darkmode", isDarkmode.toString());
 
-    document.body.classList.toggle("dark", isDarkmode);
+    // data-theme 속성 추가
+    document.documentElement.setAttribute(
+      "data-theme",
+      isDarkmode ? "dark" : "light"
+    );
   }, [isDarkmode]);
 
   return (
     <button
-      className={styles.button}
+      className={`${styles.button} ${isDarkmode ? "dark" : ""}`}
       onClick={() => setIsDarkmode(!isDarkmode)}
     >
-      {isDarkmode ? "💡" : "🌕"}
+      {isDarkmode ? <CiLight size={30} /> : <CiDark size={30} />}
     </button>
   );
 };
