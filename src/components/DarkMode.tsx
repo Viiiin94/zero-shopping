@@ -1,6 +1,4 @@
-// DarkMode.js
-
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { CiDark, CiLight } from "react-icons/ci";
 
 import styles from "./DarkMode.module.scss";

@@ -25,7 +25,7 @@ const Footer = () => {
           href="https://square-oxygen-519.notion.site/1a2c928d858c4087a7baa45c94d72643?pvs=4"
           target="_blank"
         >
-          <SiNotion size={50} />
+          <SiNotion size={50} className={styles.logo} />
         </a>
       </div>
     </footer>

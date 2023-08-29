@@ -1,0 +1,13 @@
+@use "./colors.scss" as *;
+
+html[data-theme="light"] {
+  --color-text: #{$text-color-1};
+  --color-background-1: #{$bg-light-color-1};
+  --color-background-2: #{$bg-light-color-2};
+}
+
+html[data-theme="dark"] {
+  --color-text: #{$text-color-2};
+  --color-background-1: #{$bg-dark-color-1};
+  --color-background-2: #{$bg-dark-color-2};
+}

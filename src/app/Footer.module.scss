@@ -2,20 +2,22 @@
   width: 100%;
   height: 10rem;
 
-  margin-top: 4rem;
-
-  background-color: #e3e2e2;
+  background-color: var(--color-background-1);
 
   display: flex;
   justify-content: space-evenly;
 
-  padding: 1rem 0;
+  padding: 2rem 0 2rem 0;
 
   .text_container {
     height: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    p {
+      color: var(--color-text);
+    }
   }
 
   .logo_container {
@@ -43,5 +45,5 @@
 }
 
 .logo {
-  color: #141618;
+  color: var(--color-text);
 }
