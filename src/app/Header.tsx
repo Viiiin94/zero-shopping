@@ -6,7 +6,7 @@ import Modal from "../components/Modal";
 import DarkMode from "../components/DarkMode";
 
 import styles from "./Header.module.scss";
-import SearchInput from "../components/SearchInput";
+import Search from "../components/Search";
 import ShoppingCart from "../components/ShoppingCart";
 
 const Header = () => {
@@ -34,7 +34,7 @@ const Header = () => {
         </div>
         <div className={styles.right_side}>
           <DarkMode />
-          <SearchInput />
+          <Search />
           <ShoppingCart />
         </div>
       </nav>
