@@ -3,9 +3,24 @@
 }
 
 .input {
-  height: 20px;
-  width: 150px;
+  padding: 10px;
+  width: 300px;
+  outline: #ddd;
+}
+
+.ul {
+  position: absolute;
 }
 
 .list {
+  padding: 10px;
+  width: 302px;
+
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  border-top: none;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

@@ -9,12 +9,23 @@
 }
 
 .card {
-  width: 50rem;
+  width: 60rem;
   height: 30rem;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: var(--color-background-3);
+
+  margin-bottom: 2rem;
+
+  h1 {
+    padding: 0 0 3rem 1rem;
+    color: var(--color-text);
+  }
 
   .wrapper {
     width: 100%;
@@ -36,19 +47,24 @@
 
   .category {
     padding: 1rem 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid gray;
+
+    color: var(--color-text);
 
     font-size: 2rem;
   }
 
   .description {
     padding: 1rem 0;
+    color: var(--color-sub-text);
   }
 
   .price {
     display: flex;
     justify-content: right;
     margin: 3px 0;
+
+    color: var(--color-sub-text);
   }
 
   .rate_wrap {
@@ -57,5 +73,7 @@
     flex-direction: row;
     justify-content: right;
     padding: 5px 0;
+
+    color: var(--color-sub-text);
   }
 }

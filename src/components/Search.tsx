@@ -1,4 +1,6 @@
 import { ChangeEvent, useState } from "react";
+import { Link } from "react-router-dom";
+
 import { useAppSelector } from "../hooks/useRedux";
 
 import styles from "./Search.module.scss";
@@ -31,10 +33,14 @@ const SearchInput = () => {
         placeholder="상품을 검색하세요"
         className={styles.input}
       />
-      <ul>
+      <ul className={styles.ul}>
         {filterProducts &&
-          filterProducts.map((product) => (
-            <li className={styles.list}>{product.title}</li>
+          filterProducts.map((product, idx) => (
+            <li className={styles.list} key={idx}>
+              <Link to={`/products/${product.id}`} state={product}>
+                {product.title}
+              </Link>
+            </li>
           ))}
       </ul>
     </div>

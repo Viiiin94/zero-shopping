@@ -16,7 +16,7 @@ const Card: React.FC<CardProps> = ({ title, image, price, product }) => {
   return (
     <li className={styles.list}>
       <Link
-        to="/products/:product"
+        to={`/products/${product.id}`}
         className={styles.image_container}
         state={product}
       >
