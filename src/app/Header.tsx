@@ -21,7 +21,7 @@ const Header = () => {
       <nav className={styles.nav}>
         <div className={styles.left_side}>
           <div className={styles.hamburger}>
-            <GiHamburgerMenu onClick={ontoggleModal} />
+            <GiHamburgerMenu onClick={ontoggleModal} size={30} />
           </div>
           <div className={styles.home_button}>
             <Link to="/">My Shop</Link>

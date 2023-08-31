@@ -2,6 +2,7 @@ import { useAppSelector } from "../../hooks/useRedux";
 import CardList from "../../components/card/CardList";
 
 import styles from "./Main.module.scss";
+import Carousel from "../../components/carousel/Carousel";
 
 const Main = () => {
   const product = useAppSelector((state) => state.product.products);
@@ -17,6 +18,7 @@ const Main = () => {
 
   return (
     <div className={styles.container}>
+      <Carousel />
       <CardList products={fashion} title="패션" />
       <CardList products={accessory} title="액세서리" />
       <CardList products={digital} title="디지털" />

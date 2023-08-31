@@ -18,6 +18,8 @@
     justify-content: right;
 
     margin: 1rem;
+
+    cursor: pointer;
   }
 
   .link {
@@ -28,5 +30,9 @@
 
     font-size: x-large;
     font-weight: 400;
+
+    a {
+      margin: 1rem 0;
+    }
   }
 }
