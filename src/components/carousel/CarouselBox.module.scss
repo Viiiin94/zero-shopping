@@ -11,14 +11,34 @@
     z-index: 1000;
 
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 10%;
   }
 }
 
+.title_wrapper {
+  padding: 10px 0;
+  .title {
+    color: #f1f1f1;
+  }
+}
+
+.text_wrapper {
+  .text {
+    color: #f1f1f1;
+  }
+}
+
 .button_wrapper {
+  padding: 10px 0;
   .button {
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    border: 1px solid black;
+    background-color: bisque;
+
+    color: #f1f1f1;
   }
 }

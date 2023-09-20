@@ -1,5 +1,6 @@
-import { Swiper, SwiperSlide } from "swiper/react";
+import CarouselBox from "./CarouselBox";
 
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
 import "swiper/css";
@@ -7,10 +8,11 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-import styles from "./Carousel.module.scss";
-import CarouselBox from "./CarouselBox";
+import GQ from "../../assets/gq.webp";
+import Mac from "../../assets/macbook.jpg";
+import Market from "../../assets/market.jpeg";
 
-import Levis from "../../assets/levis.jpeg";
+import styles from "./Carousel.module.scss";
 
 const Carousel = () => {
   return (
@@ -29,7 +31,7 @@ const Carousel = () => {
         >
           <SwiperSlide>
             <CarouselBox
-              image={Levis}
+              image={GQ}
               title="의류"
               description="옷을 사고싶다고?"
               navigation="fashion"
@@ -37,15 +39,15 @@ const Carousel = () => {
           </SwiperSlide>
           <SwiperSlide>
             <CarouselBox
-              image="1"
-              title="전자기기"
-              description="전자기기"
+              image={Mac}
+              title="전자제품"
+              description="새로운 맥북을 구매하세요"
               navigation="digital"
             />
           </SwiperSlide>
           <SwiperSlide>
             <CarouselBox
-              image="1"
+              image={Market}
               title="식품코너"
               description="추석이다"
               navigation="market"

@@ -20,10 +20,10 @@ const CarouselBox: React.FC<CarouselBoxProps> = ({
       <img className={styles.image} src={image} />
       <div className={styles.content}>
         <div className={styles.title_wrapper}>
-          <h1>{title}</h1>
+          <h1 className={styles.title}>{title}</h1>
         </div>
         <div className={styles.text_wrapper}>
-          <span>{description}</span>
+          <span className={styles.text}>{description}</span>
         </div>
         <div className={styles.button_wrapper}>
           <Link to={`/${navigation}`} className={styles.button}>
