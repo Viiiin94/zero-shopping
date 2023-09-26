@@ -9,9 +9,9 @@ const Accessory = () => {
   const accessory = product.filter((item) => item.category === "jewelery");
 
   return (
-    <div className={styles.container}>
+    <article className={styles.container}>
       <h1 className={styles.title}>액세서리</h1>
-      <div className={styles.section}>
+      <section className={styles.section}>
         <ul className={styles.list_container}>
           {accessory.map((product) => (
             <Card
@@ -23,8 +23,8 @@ const Accessory = () => {
             />
           ))}
         </ul>
-      </div>
-    </div>
+      </section>
+    </article>
   );
 };
 

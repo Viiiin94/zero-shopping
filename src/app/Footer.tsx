@@ -1,5 +1,4 @@
 import { BsGithub } from "react-icons/bs";
-import { AiOutlineMail } from "react-icons/ai";
 import { SiTistory, SiNotion } from "react-icons/si";
 
 import styles from "./Footer.module.scss";

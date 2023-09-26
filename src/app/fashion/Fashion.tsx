@@ -12,9 +12,9 @@ const Fashion = () => {
   );
 
   return (
-    <section className={styles.container}>
+    <article className={styles.container}>
       <h1 className={styles.title}>패션</h1>
-      <div className={styles.section}>
+      <section className={styles.section}>
         <ul className={styles.list_container}>
           {fashion.map((product) => (
             <Card
@@ -26,8 +26,8 @@ const Fashion = () => {
             />
           ))}
         </ul>
-      </div>
-    </section>
+      </section>
+    </article>
   );
 };
 

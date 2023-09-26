@@ -1,12 +1,11 @@
 import CarouselBox from "./CarouselBox";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Navigation, A11y, Autoplay, EffectFade } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
+import "swiper/css/effect-fade";
 
 import GQ from "../../assets/gq.webp";
 import Mac from "../../assets/macbook.jpg";
@@ -16,18 +15,16 @@ import styles from "./Carousel.module.scss";
 
 const Carousel = () => {
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.section}>
+    <article className={styles.wrapper}>
+      <section className={styles.section}>
         <Swiper
-          // install Swiper modules
-          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          modules={[Navigation, A11y, Autoplay, EffectFade]}
+          effect={"fade"}
           spaceBetween={50}
           slidesPerView={1}
           navigation
-          pagination={{ clickable: true }}
-          // scrollbar={{ draggable: true }}
-          onSwiper={() => {}}
-          onSlideChange={() => {}}
+          autoplay={{ delay: 3500, disableOnInteraction: false }}
+          loop={true}
         >
           <SwiperSlide>
             <CarouselBox
@@ -54,8 +51,8 @@ const Carousel = () => {
             />
           </SwiperSlide>
         </Swiper>
-      </div>
-    </div>
+      </section>
+    </article>
   );
 };
 

@@ -17,12 +17,12 @@ const Main = () => {
   const digital = product.filter((item) => item.category === "electronics");
 
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
       <Carousel />
       <CardList products={fashion} title="패션" />
       <CardList products={accessory} title="액세서리" />
       <CardList products={digital} title="디지털" />
-    </div>
+    </main>
   );
 };
 

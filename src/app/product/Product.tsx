@@ -22,8 +22,8 @@ const Product = () => {
   const { id, title, price, description, category, image, rating } = products;
 
   return (
-    <div className={styles.container}>
-      <div className={styles.section}>
+    <article className={styles.container}>
+      <section className={styles.section}>
         <div className={styles.card}>
           <h1>
             {id}. {title}
@@ -41,8 +41,8 @@ const Product = () => {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </article>
   );
 };
 

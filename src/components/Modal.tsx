@@ -10,14 +10,14 @@ interface ModalProps {
 
 const Modal: React.FC<ModalProps> = ({ ontoggleModal, children }) => {
   return (
-    <div className={styles.container}>
+    <nav className={styles.container}>
       <div className={styles.wrapper}>
         <div className={styles.close}>
           <MdClose size={45} onClick={ontoggleModal} />
         </div>
         <div className={styles.link}>{children}</div>
       </div>
-    </div>
+    </nav>
   );
 };
 

@@ -9,9 +9,9 @@ const Digital = () => {
   const digital = product.filter((item) => item.category === "electronics");
 
   return (
-    <div className={styles.container}>
+    <article className={styles.container}>
       <h1 className={styles.title}>디지털</h1>
-      <div className={styles.section}>
+      <section className={styles.section}>
         <ul className={styles.list_container}>
           {digital.map((product) => (
             <Card
@@ -23,8 +23,8 @@ const Digital = () => {
             />
           ))}
         </ul>
-      </div>
-    </div>
+      </section>
+    </article>
   );
 };
 
