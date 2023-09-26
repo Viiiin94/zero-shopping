@@ -1,5 +1,71 @@
-@import "../../common.scss";
+@use "../../themes.scss" as *;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 
 .container {
-  @include container;
+  position: relative;
+  height: 100vh;
+  background-color: var(--color-background-2);
+
+  .wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    a {
+      display: inline-block;
+      background: #ff6300;
+      color: #fff;
+
+      font-family: montserrat, sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      padding: 13px 23px;
+      -webkit-transition: 0.2s all;
+      transition: 0.2s all;
+    }
+
+    .notfound {
+      position: relative;
+      height: 200px;
+      margin: 0 auto 20px;
+      z-index: 2000;
+
+      h1 {
+        color: var(--color-text);
+        margin: 0;
+
+        font-family: montserrat, sans-serif;
+        font-size: 236px;
+        font-weight: 200;
+        text-transform: uppercase;
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      h2 {
+        display: inline-block;
+        background-color: var(--color-background-2);
+        color: var(--color-text);
+
+        font-family: montserrat, sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+
+        padding: 10px 5px;
+        margin: auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
 }

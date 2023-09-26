@@ -29,6 +29,7 @@ const Carousel = () => {
           <SwiperSlide>
             <CarouselBox
               image={GQ}
+              imageAlt="fashion image"
               title="의류"
               description="옷을 사고싶다고?"
               navigation="fashion"
@@ -37,6 +38,7 @@ const Carousel = () => {
           <SwiperSlide>
             <CarouselBox
               image={Mac}
+              imageAlt="electric image"
               title="전자제품"
               description="새로운 맥북을 구매하세요"
               navigation="digital"
@@ -45,6 +47,7 @@ const Carousel = () => {
           <SwiperSlide>
             <CarouselBox
               image={Market}
+              imageAlt="market image"
               title="식품코너"
               description="추석이다"
               navigation="market"

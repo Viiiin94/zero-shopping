@@ -24,7 +24,7 @@ const Header = () => {
             <GiHamburgerMenu onClick={ontoggleModal} size={30} />
           </div>
           <div className={styles.home_button}>
-            <Link to="/">My Shop</Link>
+            <a href="/">My Shop</a>
           </div>
           <div className={styles.link}>
             <Link to="/fashion">패션</Link>
