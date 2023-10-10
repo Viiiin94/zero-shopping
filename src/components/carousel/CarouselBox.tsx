@@ -4,10 +4,10 @@ import styles from "./CarouselBox.module.scss";
 
 interface CarouselBoxProps {
   image: string;
-  imageAlt: string;
+  imageAlt?: string;
   title: string;
   description: string;
-  navigation: string;
+  navigation?: string;
 }
 
 const CarouselBox: React.FC<CarouselBoxProps> = ({
@@ -29,7 +29,7 @@ const CarouselBox: React.FC<CarouselBoxProps> = ({
         </div>
         <div className={styles.button_wrapper}>
           <Link to={`/${navigation}`} className={styles.button}>
-            이동하기 <PiArrowRightLight size={20} />
+            이동하기 <PiArrowRightLight size={30} />
           </Link>
         </div>
       </div>

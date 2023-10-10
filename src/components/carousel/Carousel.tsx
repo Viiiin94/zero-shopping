@@ -9,7 +9,7 @@ import "swiper/css/effect-fade";
 
 import GQ from "../../assets/gq.webp";
 import Mac from "../../assets/macbook.jpg";
-import Market from "../../assets/market.jpeg";
+import Market from "../../assets/market.jpg";
 
 import styles from "./Carousel.module.scss";
 
@@ -23,15 +23,15 @@ const Carousel = () => {
           spaceBetween={50}
           slidesPerView={1}
           navigation
-          autoplay={{ delay: 3500, disableOnInteraction: false }}
+          // autoplay={{ delay: 5000, disableOnInteraction: false }}
           loop={true}
         >
           <SwiperSlide>
             <CarouselBox
               image={GQ}
               imageAlt="fashion image"
-              title="의류"
-              description="옷을 사고싶다고?"
+              title="의류코너"
+              description="무드 있는 당신을 위한 컬렉션"
               navigation="fashion"
             />
           </SwiperSlide>
@@ -49,7 +49,7 @@ const Carousel = () => {
               image={Market}
               imageAlt="market image"
               title="식품코너"
-              description="추석이다"
+              description="전 세계 향신료들의 집합"
               navigation="market"
             />
           </SwiperSlide>
