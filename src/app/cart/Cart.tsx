@@ -2,9 +2,12 @@ import styles from "./Cart.module.scss";
 
 const Cart = () => {
   return (
-    <div className={styles.container}>
-      <div className={styles.wrapper}>1</div>
-    </div>
+    <article className={styles.container}>
+      <div className={styles.wrapper}>
+        <h1>장바구니</h1>
+        <section className={styles.box}></section>
+      </div>
+    </article>
   );
 };
 
